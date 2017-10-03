@@ -1,0 +1,5 @@
+Angga Sutejo,		Male,	true,	25,	3,	5000000, 1000000, 2000000, 500000,	 3,	 0.025, 081363671500, Jalan Pramuka No 6,		ID001
+Lala Suherman,		Female,	false,	26,	2,	6000000, 2000000, 3000000, 900000,	 6,	 0.035,	085278636373, Jalan Jendral Suprapto No 90,	ID002	
+Budiman,		Male,	false,	27,	1,	7000000, 2000000, 2000000, 1000000,	 12,	 0.05,	085385847593, Jalan Sudirman No 201,		ID003
+Rani Syafrina,		Female,	false,	29,	1,	5000000, 2000000, 1000000, 700000,	 18,	 0.055,	085678908833, Jalan Anggrek No 30,		ID004
+Agus Bimbang,		Male,	true,	30,	2,	4000000, 2000000, 2000000, 900000,	 24,	 0.06,	085598899738, Jalan Merpati No 65,		ID005
