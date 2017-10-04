@@ -7,21 +7,12 @@ package id.co.indocyber.freshproject.main;
 
 import id.co.indocyber.freshproject.model.CustomersGenerator;
 import id.co.indocyber.freshproject.model.Customers;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.text.NumberFormat;
-import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JButton;
 import javax.swing.ListSelectionModel;
 import javax.swing.RowFilter;
 import javax.swing.event.ListSelectionEvent;
@@ -40,86 +31,11 @@ public class CreditAppMain extends javax.swing.JFrame {
 
     /**
      * Creates new form KreditApp
+     * @throws java.io.IOException
      */
     public CreditAppMain() throws IOException {
         initComponents();
-//        showPeople();
     }
-
-    private void showPeople() throws IOException {
-//        try {
-//            List<Customers> data = CustomersGenerator.inputDataCustomer("C:/JAVA_LATIHAN/CustomerData.txt");
-//            model = (DefaultTableModel) personTable.getModel();
-//
-//            Object[] row = new Object[5];
-//            for (Customers person : data) {
-//                row[0] = person.getIdCustomers();
-//                row[1] = person.getName();
-//                row[2] = person.getGender();
-//                row[3] = person.getMarried();
-//                row[4] = person.getAge();
-//                
-//                model.addRow(row);
-//            }
-//            ListSelectionModel rowSelMod = personTable.getSelectionModel();
-//            rowSelMod.addListSelectionListener(new ListSelectionListener() {
-//                @Override
-//                public void valueChanged(ListSelectionEvent e) {
-//                    if (!e.getValueIsAdjusting()) {
-//                        int i = personTable.getSelectedRow();
-//                        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(new Locale("in_ID", "ID"));
-//                        String nama = (String) model.getValueAt(i, 1);
-//                        name1TextField.setText(nama);
-//                        name1TextField.setEditable(false);
-//                        String gender = (String) model.getValueAt(i, 2);
-//                        gender1TextField.setText(gender);
-//                        gender1TextField.setEditable(false);
-//                        String married = (String) model.getValueAt(i, 3).toString();
-//                        if (married.equalsIgnoreCase("true")) {
-//                            statusTextField.setText("Married");
-//                            statusTextField.setEditable(false);
-//                        } else {
-//                            statusTextField.setText("Single");
-//                            statusTextField.setEditable(false);
-//                        }
-//                        int umur = (int) model.getValueAt(i, 4);
-//                        String age = String.valueOf(umur);
-//                        age1TextField.setText(age + " Years");
-//                        age1TextField.setEditable(false);
-//                        depentTextField.setText(String.valueOf(data.get(i).getDepent() + " Persons"));
-//                        depentTextField.setEditable(false);
-//                        salaryTextField.setText(currencyFormatter.format( data.get(i).getSalary()));
-//                        salaryTextField.setEditable(false);
-//                        bonusTextField.setText(currencyFormatter.format( data.get(i).getBonus()));
-//                        bonusTextField.setEditable(false);
-//                        priceGoodsTextField.setText(currencyFormatter.format( data.get(i).getHargaBarang()));
-//                        priceGoodsTextField.setEditable(false);
-//                        dPTextField.setText(currencyFormatter.format( data.get(i).getdP()));
-//                        dPTextField.setEditable(false);
-//                        timeTextField.setText(String.valueOf(data.get(i).getTime() + " Months"));
-//                        timeTextField.setEditable(false);
-//                        rateTextField.setText(String.valueOf(data.get(i).getRate()* 100.0 + " Percent"));
-//                        rateTextField.setEditable(false);
-//                        totalSalaryTextField.setText(currencyFormatter.format( data.get(i).TotalPenghasilan()));
-//                        totalSalaryTextField.setEditable(false);
-//                        cicilanTextField.setText(currencyFormatter.format(  data.get(i).CicilanPerBulan()));
-//                        cicilanTextField.setEditable(false);
-//                        ketTextField.setText(String.valueOf(data.get(i).AnalisaKredit()));
-//                        ketTextField.setEditable(false);
-//                        telpTextField.setText(String.valueOf(data.get(i).getTelp()));
-//                        telpTextField.setEditable(false);
-//                        adressTextArea.setText(String.valueOf(data.get(i).getAdress()));
-//                        adressTextArea.setEditable(false);
-//                        idCustomerTextField.setText(String.valueOf(data.get(i).getIdCustomers()));
-//                        idCustomerTextField.setEditable(false);
-//                    }
-//                }
-//            });
-//        } catch (IOException ex) {
-//            Logger.getLogger(CreditAppMain.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-    }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

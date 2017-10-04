@@ -29,10 +29,10 @@ public class CustomersGenerator {
         while ((line = br.readLine()) != null) {
             String[] arrayModel = line.split(",");
             Customers person = new Customers(
-                    arrayModel[0], //nama
-                    arrayModel[1].trim(), // gender
-                    arrayModel[2].trim(), //status
-                    Integer.parseInt(arrayModel[3].trim()), //umur
+                    arrayModel[0],
+                    arrayModel[1].trim(),
+                    arrayModel[2].trim(),
+                    Integer.parseInt(arrayModel[3].trim()),
                     Integer.parseInt(arrayModel[4].trim()),
                     Double.parseDouble(arrayModel[5].trim()),
                     Double.parseDouble(arrayModel[6].trim()),
@@ -44,10 +44,8 @@ public class CustomersGenerator {
                     arrayModel[12].trim(),
                     arrayModel[13].trim()
             );
-
             people.add(person);
         }
         return people;
     }
-
 }
